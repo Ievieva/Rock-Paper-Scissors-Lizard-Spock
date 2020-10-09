@@ -1,1 +1,1 @@
-# RPSLS
+# RPSLS - rock, paper, scissors ++
