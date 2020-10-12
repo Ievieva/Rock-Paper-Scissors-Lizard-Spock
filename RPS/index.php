@@ -32,7 +32,7 @@ $result = $game->play($winCombinations);
 <body>
 <h1 style="text-align: center;"><?= $result; ?></h1>
 <div class="icons">
-    <img src="/icons/<?= $usersChoice; ?>-icon.jpg" alt="user's choice"/>
+    <img src="/icons/<?= $usersChoice ?: 'rock'; ?>-icon.jpg" alt="user's choice"/>
     <h2 style="text-align: center; padding: 15px;">You vs PC</h2>
     <img src="/icons/<?= $pcChoice; ?>-icon.jpg" alt="PC's choice"/>
 </div>
