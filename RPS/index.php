@@ -30,7 +30,7 @@ $result = $game->play($winCombinations);
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<h1 style="text-align: center;"><?= $result; ?></h1>
+<h1 style="text-align: center; padding-top: 100px; "><?= $result; ?></h1>
 <div class="icons">
     <img src="/icons/<?= $usersChoice ?: 'rock'; ?>-icon.jpg" alt="user's choice"/>
     <h2 style="text-align: center; padding: 15px;">You vs PC</h2>
@@ -57,5 +57,3 @@ $result = $game->play($winCombinations);
 </form>
 </body>
 </html>
-
-
