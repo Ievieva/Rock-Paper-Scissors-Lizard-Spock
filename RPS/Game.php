@@ -13,7 +13,6 @@ class Game
 
     public function play(array $winCombinations): string
     {
-        for ($i = 0; $i < count($winCombinations); $i++) {
             if ($this->userKey === $this->pcKey) {
                 return "It's a tie!";
             } elseif (in_array(
@@ -24,6 +23,5 @@ class Game
             } else {
                 return 'You lose!';
             }
-        }
     }
 }
