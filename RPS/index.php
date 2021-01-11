@@ -38,21 +38,11 @@ $result = $game->play($winCombinations);
 </div>
 <form action="/" method="post">
     <div class="icons">
-        <button type="submit" name="choice" value="rock">
-            <img src="/icons/rock-icon.jpg" alt="submit"/>
+        <?php foreach ($icons as $icon): ?>
+        <button type="submit" name="choice" value="<?php echo $icon; ?>">
+            <img src="/icons/<?php echo $icon; ?>-icon.jpg" alt="submit"/>
         </button>
-        <button type="submit" name="choice" value="paper">
-            <img src="/icons/paper-icon.jpg" alt="submit"/>
-        </button>
-        <button type="submit" name="choice" value="scissors">
-            <img src="/icons/scissors-icon.jpg" alt="submit"/>
-        </button>
-        <button type="submit" name="choice" value="lizard">
-            <img src="/icons/lizard-icon.jpg" alt="submit"/>
-        </button>
-        <button type="submit" name="choice" value="spock">
-            <img src="/icons/spock-icon.jpg" alt="submit"/>
-        </button>
+        <?php endforeach; ?>
     </div>
 </form>
 </body>
