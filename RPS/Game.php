@@ -25,3 +25,5 @@ class Game
             }
     }
 }
+
+console.log('All good!');
